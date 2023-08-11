@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,38 @@
 
     </style>
 </head>
+
 <body>
-    <header><h1>hello dom khela hobbe</h1></header>
+    <header>
+        <h1>hello dom khela hobbe</h1>
+    </header>
     <main>
         <h1>Hello I am start Dom Mission</h1>
         <h3>Dom Means</h3>
-        <p>Document</p>
-        <p>Object</p>
-        <p>Model</p>
+        <ul>
+            <li>Document</li>
+            <li>Object</li>
+            <li>Model</li>
+        </ul>
+        <ul>
+            <li>Jibon</li>
+            <li>ta bedona</li>
+            <li>kore dili</li>
+        </ul>
     </main>
 
     <script src="js/dom.js"></script>
     <script>
-        console.log(document);
+        const liCollection = document.getElementsByTagName('p');
+        for (const li of liCollection) {
+            console.log(li.innerText);
+        }
+
+        const hcollection = document.getElementsByTagName('h1');
+        for (const h1 of hcollection) {
+            console.log(h1.innerText);
+        }
     </script>
 </body>
+
 </html>
