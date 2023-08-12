@@ -18,35 +18,44 @@
     <main>
         <h1>Hello I am start Dom Mission</h1>
         <h3>Dom Means</h3>
-        <ul>
-            <li>Document</li>
-            <li>Object</li>
-            <li>Model</li>
-        </ul>
-        <div class="ftuits-container">
+        <section>
             <ul>
-                <li>Jibon</li>
-                <li>ta bedona</li>
-                <li>kore dili</li>
+                <li>Document</li>
+                <li>Object</li>
+                <li>Model</li>
             </ul>
-        </div>
+        </section>
+        <section>
+            <div class="ftuits-container">
+                <ul>
+                    <li>Jibon</li>
+                    <li>ta bedona</li>
+                    <li>kore dili</li>
+                </ul>
+            </div>
+        </section>
         <h1 id="fruits-title">All Upozilas</h1>
-        <ul>
-            <li class="fruits-title">Bhola</li>
-            <li class="fruits-title">Chorfasion</li>
-            <li class="fruits-title">Lalmohon</li>
-            <li class="fruits-title">Borhanuddin</li>
-        </ul>
-        <h1 id="fruits-title">All Zila</h1>
-        <ul>
-            <li class="importent-place">Barisal</li>
-            <li class="importent-place">Chorfasion</li>
-            <li class="importent-place">Donpara</li>
-            <li class="importent-place">Borhanuddin</li>
-        </ul>
+        <section id="place-container" class="large-text">
+            <ul>
+                <li class="fruits-title">Bhola</li>
+                <li class="fruits-title">Chorfasion</li>
+                <li class="fruits-title">Lalmohon</li>
+                <li class="fruits-title">Borhanuddin</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="fruits-title">All Zila</h1>
+            <ul>
+                <li class="importent-place">Barisal</li>
+                <li class="importent-place">Chorfasion</li>
+                <li class="importent-place">Donpara</li>
+                <li class="importent-place">Borhanuddin</li>
+            </ul>
+        </section>
     </main>
 
     <script src="js/dom.js"></script>
+    <script src="js/stylrInJs.js"></script>
     <script>
         // option-11: getElementsByTagName
 
@@ -61,13 +70,13 @@
             // console.log(h1.innerText);
         }
 
-            // option-2: getElementById
+        // option-2: getElementById
         const fruitTitle = document.getElementById('fruits-title');
         fruitTitle.innerText = 'All Beautiful Upozilas';
 
         // option-3: getElementsByClassName
         const places = document.getElementsByClassName('importent-place');
-        for(const palce of places){
+        for (const palce of places) {
             console.log(palce.innerText);
         }
 
@@ -75,7 +84,7 @@
         // option-4: querySelector
         // option-5: querySelectorAll
         const someLi = document.querySelectorAll('ftuits-container li');
-        for(const li of someLi);
+        for (const li of someLi);
         console.log(li.innerText);
     </script>
 </body>

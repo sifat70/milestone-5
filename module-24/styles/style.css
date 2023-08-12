@@ -4,3 +4,11 @@ h1 {
 li{
     color: blueviolet;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.large-text{
+    font-size: 2rem;
+}
