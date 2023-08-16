@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bap er bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="lg:text-4xl text-center">Functional <span class="text-emerald-700">Bap er Bank</span>!!</h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid lg:grid-cols-3 w-9/12 mx-auto gap-5">
+                <div class="bg-orange-700 p-5 rounded-md">
+                    <h1 class="text-2xl text-white text-center">Deposit</h1>
+                    <p class="text-2xl text-white text-center">$<span id="deposit-total">00</span></p>
+                </div>
+                <div class="bg-green-500 p-5 rounded-md">
+                    <h1 class="text-2xl text-white text-center">Withdraw</h1>
+                    <p class="text-2xl text-white text-center">$<span id="withdraw-total">00</span></p>
+                </div>
+                <div class="bg-rose-500 p-5 rounded-md">
+                    <h1 class="text-2xl text-white text-center">Balance</h1>
+                    <p class="text-2xl text-white text-center">$<span id="balance-total">1240</span></p>
+                </div>
+            </div>
+        </section>
+        <!-- withdraw and deposit -->
+        <section class="mt-12">
+            <div class="grid lg:grid-cols-2 gap-5 w-9/12 mx-auto">
+                <div class="bg-slate-500 p-8 rounded-lg">
+                    <h1 class="font-semibold text-2xl text-white pb-3">Your Deposit</h1>
+                    <input id="deposit-field" type="text" placeholder="$ Amound you want to Deposit" class="mb-3 input input-bordered input-accent w-full block" />
+                    <button id="deposit-btn" class="btn btn-outline btn-success">Deposit</button>
+                </div>
+                <div class="bg-lime-600 p-8 rounded-lg">
+                    <h1 class="font-semibold text-2xl text-white pb-3">Your Withdraw</h1>
+                    <input id="withdraw-field" type="text" placeholder="$ Amound you want to Withdraw" class="mb-3 input input-bordered input-accent w-full block" />
+                    <button id="withdraw-btn" class="btn btn-active btn-accent">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/utilitis.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+
+</html>
