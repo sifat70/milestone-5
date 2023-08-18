@@ -58,6 +58,18 @@ function calculateParallelogramArea(){
     const area = base * height;
 
     setElementInnerText('parallelogram-area', area);
+
+    // add to calculation entry 
+
+    /* 
+    
+    1. get the element where you to add the dynamic html
+    2. create an element you want to add
+    3. if needed add some class 
+    4. set inner.html  it could be dynamic tamplete string
+    */
+
+    addToCalculationEntry('Parallelograp', area)
 }
 
 
@@ -68,6 +80,8 @@ function calculateEllipseArea(){
     const areaToDesimal = area.toFixed(2);
 
     setElementInnerText('ellipse-area', areaToDesimal);
+
+    addToCalculationEntry('Ellipse', area)
 }
 
 // reduble get input value field in number 
@@ -86,4 +100,32 @@ function getInputValue(fieldId){
 function setElementInnerText(elementId, area){
     const element = document.getElementById(elementId);
     element.innerText = area;
+}
+
+
+
+// add to calculation entry 
+
+    /* 
+    
+    1. get the element where you to add the dynamic html
+    2. create an element you want to add
+    3. if needed add some class 
+    4. set inner.html  it could be dynamic tamplete string;
+    5. append the created element as a child of the parent
+    */
+
+
+
+function addToCalculationEntry(areaType, area){
+    console.log(areaType + ' ' + area)
+    const colculationEntry = document.getElementById('calculation-entry');
+
+    const count = colculationEntry.childElementCount;
+
+    const p = document.createElement('p');
+    p.classList.add('my-4');
+    p.innerHTML = `${count +1}. ${areaType} ${area} cm<sup>2</sup> <button class="btn btn-success btn-sm">Convert</button>`;
+
+    colculationEntry.appendChild(p);
 }
