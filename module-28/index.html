@@ -25,9 +25,9 @@
                         <h2 class="card-title">Traiangle</h2>
                         <p>Area (A) = 0.5 X b X h</p>
                         <p>
-                            <input id="base-field" type="text" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="base">
+                            <input id="base-field" type="number" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="base">
                             <span class="ml-2">cm</span>
-                            <input id="height-field" type="text" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="height">
+                            <input id="height-field" type="number" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="height">
                             <span class="ml-2">cm</span>
                         </p>
                         <p>area: <span id="triangle-area">0 </span>sm<sup>2</sup></p>
@@ -54,19 +54,44 @@
                         </div>
                     </div>
                 </div>
-                
                 <!-- card-3 -->
                 <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b X h</p>
+                        <p>
+                            <input id="parallelogram-base" type="text" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="base">
+                            <span class="ml-2">cm</span>
+                            <input id="parallelogram-height" type="text" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="height">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p>area: <span id="parallelogram-area">0</span>sm <sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- card-4 -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="./images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = b X h</p>
+                        <p>
+                            <input id="ellipse-major-radious" type="text" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="base">
+                            <span class="ml-2">cm</span>
+                            <input id="ellipse-minor-radious" type="text" class="w-16 px-2 ml-4 border bg-gray-200 text-xl" placeholder="height">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p>area: <span id="ellipse-area">0</span>sm <sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
             <!-- area calculator -->
             <div class="w-[400px]">
                 <div class="text-4xl">Area Calculator</div>
