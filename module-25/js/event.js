@@ -8,7 +8,7 @@ function redBg() {
 // option: 3
 
 const makeBlueButton = document.getElementById('make-blue');
-makeBlueButton.onclick = makeBlue;
+makeBlueButton.6 = makeBlue;
 
 function makeBlue() {
     document.body.style.backgroundColor = 'blue';
